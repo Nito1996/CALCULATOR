@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CALCULADORA</title>
+    <link rel="stylesheet"
+        href="C:\Users\randy\OneDrive\Escritorio\ProyectosCursoEmmanuel\EmmaHomeworks\CALCULADORA\CALCULADORA.CSS">
+</head>
+
+<body>
+
+    <h1 class="mainH1">
+        CALCULADORA
+    </h1>
+    <div class="mainDiv">
+        <div class="contornoDiv">
+            
+            <div id="storage" class="storage">
+            </div>
+            <div id="storagedOperations">0
+            </div>
+            <br>
+            <table class="mainTable">
+                <tbody class="tBody">
+                    <tr class="ZeroRow">
+                        <td id="toWriteCE" class="btnBorder" onclick="btnClearCE()">CE</td>
+                        <td id="toWriteC" class="btnBorder" onclick="btnClearC()">C</td>
+                        <td id="toWrite⌫" class="btnBorder" onclick="btnClearDelete()">⌫</td>
+                        <td id="toWritePorcentaje" class="porcentaje" onclick="operator('%')">%</td>
+                    </tr>
+                    <tr class="firstRow">
+                        <td id="toWrite7" class="btnBorder" onclick="calculate('7')">7</td>
+                        <td id="toWrite8" class="btnBorder" onclick="calculate('8')">8</td>
+                        <td id="toWrite9" class="btnBorder" onclick="calculate('9')">9</td>
+                        <td id="toWriteDividir" class="dividir" onclick="operator('/')">/</td>
+                    </tr>
+                    <tr class="secondRow">
+                        <td id="toWrite4" class="btnBorder" onclick="calculate('4')">4</td>
+                        <td id="toWrite5" class="btnBorder" onclick="calculate('5')">5</td>
+                        <td id="toWrite6" class="btnBorder" onclick="calculate('6')">6</td>
+                        <td id="toWriteMultiplicar" class="multiplicar" onclick="operator('*')">x</td>
+                    </tr>
+                    <tr class="thirdRow">
+                        <td id="toWrite1" class="btnBorder" onclick="calculate('1')">1</td>
+                        <td id="toWrite2" class="btnBorder" onclick="calculate('2')">2</td>
+                        <td id="toWrite3" class="btnBorder" onclick="calculate('3')">3</td>
+                        <td id="toWriteRestar" class="menos" onclick="operator('-')">-</td>
+                    </tr>
+                    <tr class="fourRow">
+                        <td id="toWrite0" class="btnBorder" onclick="calculate('0')">0</td>
+                        <td id="toWritePunto" class="punto" onclick="operator('.')">.</td>
+                        <td id="toWriteIgual" class="igual" onclick="calculating()">=</td>
+                        <td id="toWriteMas" class="sumar" onclick="operator('+')">+</td>
+                    </tr>
+                </tbody>
+            </table> <br>
+            <div class="buttonClearDiv">
+                <input type="button" value="CLEAR LOCAL STORAGE" id="inputButton" onclick="localStorage.clear(),history()">
+            </div>
+        </div>
+    </div>
+
+    <div class="positioning">
+        <h2 class="secondTitle">HISTORY</h2>
+        <div class="estiloDiv">
+
+            <table id="carTable">
+                <thead>
+                    
+                </thead>
+                <tbody id="carTableBody"></tbody>
+            </table>
+        </div>
+    </div>
+    <script
+        src="C:\Users\randy\OneDrive\Escritorio\ProyectosCursoEmmanuel\EmmaHomeworks\CALCULADORA\CALCULADORA.JS"></script>
+</body>
+
+</html>

@@ -1,0 +1,242 @@
+* {
+    box-sizing: border-box;
+    font-family: sans-serif times new roman;
+    font-weight: 100;
+}
+
+body {
+    background-color: #2A2A2A;
+}
+
+td {
+    border-radius: 10px;
+    cursor: pointer;
+    padding: 30px;
+    user-select: none;
+}
+
+input {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+table {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.tBody {
+    border-radius: 50px;
+    display: block;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+}
+
+.mainH1 {
+    font-weight: bold;
+    font-style: italic;
+    color: #1C4087;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.mainDiv {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    justify-content: flex-start;
+    text-align: right;
+
+}
+
+.mainTable {
+    background-color: #d98279;
+    color: #FFF;
+    font-size: 50px;
+    display: inline-flex;
+    text-align: center;
+    align-items: center;
+
+}
+
+.contornoDiv {
+    background-color: #D98676;
+    padding: 30px;
+}
+
+
+/*INPUT Y BOTON CLEAR*/
+#inputButton {
+    background-color: #222222;
+    color: #FFF;
+    text-decoration: none;
+    width: 510px;
+    height: 80px;
+}
+
+.storage {
+    overflow: auto;
+    background-color: #222222;
+    color: #FFF;
+    text-decoration: none;
+    width: 510px;
+    height: 52px;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    font-size: 40px;
+    text-transform: uppercase;
+}
+
+#storagedOperations {
+    overflow: auto;
+    background-color: #222222;
+    color: #FFF;
+    text-decoration: none;
+    width: 510px;
+    height: 80px;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    font-size: 68px;
+    text-transform: uppercase;
+}
+
+.estiloDiv {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #FFF;
+}
+
+.estiloDiv {
+    font-family: sans-serif;
+    font-weight: bold;
+    font-size: xx-large;
+    width: 740px;
+    height: 740px;
+    overflow: auto;
+    background-color: #222222;
+    justify-content: left;
+    align-items: baseline;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.secondTitle {
+    font-weight: bold;
+    font-size: xx-large;
+    color: #1C4087;
+    margin-left: 300px;
+}
+
+#carTableBody{
+    width: 438px;
+    height: 104px;
+}
+
+.positioning {
+    position: fixed;
+    top: 0px;
+    color: #FFF;
+}
+
+#btnDelete {
+    height: 70px;
+    border-radius: 15px;
+    width: 160px;
+    font-family: sans-serif;
+    font-size: x-large;
+    font-weight: bold;
+}
+
+#inputButton {
+    border-radius: 10px;
+    font-size: x-large;
+    text-transform: uppercase;
+}
+
+.buttonClearDiv {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+}
+
+/*COLORES DE LOS SIGNOS*/
+
+#toWriteCE,
+#toWriteC,
+#toWrite⌫,
+#toWritePorcentaje {
+    background-color: #6B3F3C;
+    text-decoration: none;
+}
+
+.dividir,
+.multiplicar,
+.menos,
+.sumar,
+.igual,
+.punto,
+.porcentaje {
+    background-color: #6B3F3C;
+    text-decoration: none;
+    width: 124px;
+}
+
+.btnBorder {
+    border: 1px;
+    border-style: solid;
+    border-color: #FFF;
+}
+
+/*HOVERS*/
+#inputText:hover,
+#inputButton:hover {
+    background-color: #000000;
+    transition: 0.5seg;
+}
+
+#toWriteCE:hover,
+#toWriteC:hover,
+#toWrite⌫:hover,
+#toWritePorcentaje:hover {
+    background-color: rgba(0, 0, 0, 0.767);
+    transition: 0.5seg;
+}
+
+.dividir:hover,
+.multiplicar:hover,
+.menos:hover,
+.sumar:hover,
+.igual:hover,
+.punto:hover {
+    background-color: rgba(0, 0, 0, 0.767);
+    transition: 0.5seg;
+}
+
+.btnBorder:hover {
+    background-color: #222222;
+}
+
+.estiloDiv:hover {
+    background-color: black;
+    transition: 1seg;
+    cursor: pointer;
+}
+
+#btnDelete:hover {
+    background-color: #222222;
+    transition: 0.5seg;
+    cursor: pointer;
+}
